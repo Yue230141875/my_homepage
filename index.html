@@ -20,9 +20,11 @@
 
     <div class="flex min-h-screen">
         <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <h1 class="sidebar-title">My Profile</h1>
-                <button class="sidebar-close" id="closeSidebar" aria-label="关闭菜单">×</button>
+            <div class="sidebar-profile">
+                <div class="avatar-container">
+                    <span class="avatar-text">Yue</span>
+                </div>
+                <h2 class="profile-name">Yue Chen</h2>
             </div>
             <nav class="sidebar-nav">
                 <button class="nav-btn active w-full text-left px-5 py-3.5 rounded-xl transition-all duration-300 ease-out" data-section="basic">
@@ -52,26 +54,19 @@
                     <div class="card space-y-5">
                         <div class="info-row">
                             <span class="info-label">姓名</span>
-                            <span class="info-value">[Your Name]</span>
+                            <span class="info-value">陈岳</span>
                         </div>
                         <div class="info-row">
                             <span class="info-label">学校</span>
-                            <span class="info-value">[你的学校名称]</span>
+                            <span class="info-value">上海师范大学</span>
                         </div>
                         <div class="info-row">
                             <span class="info-label">专业</span>
                             <span class="info-value">人工智能</span>
                         </div>
                         <div class="info-row">
-                            <span class="info-label">身份</span>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="badge badge-primary">大三学生</span>
-                                <span class="badge badge-secondary">[考研备考中/求职中]</span>
-                            </div>
-                        </div>
-                        <div class="info-row border-t border-slate-100 pt-5 mt-5">
-                            <span class="info-label">座右铭</span>
-                            <span class="info-value italic text-slate-500">"[你的座右铭]"</span>
+                            <span class="info-label">学历</span>
+                            <span class="info-value">本科在读</span>
                         </div>
                     </div>
                 </div>
@@ -83,37 +78,31 @@
                     <div class="space-y-5">
                         <div class="card">
                             <h3 class="card-subtitle">教育经历</h3>
-                            <p class="card-text">[入学年份] - 至今 | [学校名称] | 人工智能专业</p>
-                            <p class="card-hint mt-3">GPA：[你的GPA]/4.0 | 主修课程：机器学习、深度学习、计算机视觉、自然语言处理等</p>
+                            <p class="card-text">2023年 - 至今 | 上海师范大学 | 人工智能专业</p>
+                            <p class="card-hint mt-3">GPA：2.26/4.0 | 主修课程：算法与数据结构、模式识别与机器学习、深度学习及其编程、Python与数据分析、数字图像处理等</p>
                         </div>
 
                         <div class="card">
                             <h3 class="card-subtitle">学习方向</h3>
-                            <p class="card-text">[你的研究方向，例如：深度学习、计算机视觉、推荐系统等]</p>
-                        </div>
-
-                        <div class="card">
-                            <h3 class="card-subtitle">求职/考研目标</h3>
-                            <p class="card-text">[你的目标：考研/校招/实习]</p>
-                            <p class="card-hint mt-2">[目标公司/院校方向]</p>
+                            <p class="card-text">深度学习与计算机视觉、自然语言处理、大数据分析与智能决策</p>
                         </div>
 
                         <div class="card">
                             <h3 class="card-subtitle">个人特点</h3>
                             <ul class="card-list">
-                                <li>[特点1，例如：对AI技术有浓厚兴趣]</li>
-                                <li>[特点2，例如：善于独立思考和解决问题]</li>
-                                <li>[特点3]</li>
+                                <li>对人工智能技术抱有浓厚兴趣，始终保持主动学习的热情</li>
+                                <li>善于独立思考，遇到问题会主动查阅资料、拆解难点，逐步提升专业能力</li>
+                                <li>性格沉稳耐心，做事认真负责，有较强的团队协作意识和沟通能力</li>
                             </ul>
                         </div>
 
                         <div class="card">
                             <h3 class="card-subtitle">兴趣爱好</h3>
                             <div class="flex flex-wrap gap-2 mt-3">
-                                <span class="tag tag-neutral">[兴趣1]</span>
-                                <span class="tag tag-neutral">[兴趣2]</span>
-                                <span class="tag tag-neutral">[兴趣3]</span>
-                                <span class="tag tag-neutral">[兴趣4]</span>
+                                <span class="tag tag-neutral">手工创作</span>
+                                <span class="tag tag-neutral">策略游戏</span>
+                                <span class="tag tag-neutral">科技内容学习</span>
+                                <span class="tag tag-neutral">视频剪辑创作</span>
                             </div>
                         </div>
                     </div>
@@ -126,41 +115,54 @@
                     <div class="space-y-5">
                         <div class="card card-hover">
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
-                                <h3 class="card-title">[项目名称1 - 课程大作业]</h3>
-                                <a href="#" class="link whitespace-nowrap">GitHub ↗</a>
+                                <h3 class="card-title">社交媒体虚假信息检测系统</h3>
+                                <span class="tag tag-danger text-xs self-start">重点项目</span>
                             </div>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tag tag-success">[技术栈1]</span>
-                                <span class="tag tag-success">[技术栈2]</span>
-                                <span class="tag tag-success">[技术栈3]</span>
+                                <span class="tag tag-success">机器学习</span>
+                                <span class="tag tag-success">NLP</span>
+                                <span class="tag tag-success">Python</span>
                             </div>
-                            <p class="card-text">[项目简介：这是某课程的期末大作业，实现了什么功能，用到了哪些技术，取得了什么效果]</p>
+                            <p class="card-text">基于中文社交媒体谣言数据集，完成数据预处理、多维度特征工程、模型训练与传播规律分析。实现逻辑回归、朴素贝叶斯、随机森林对比建模，最优模型F1=0.7923、AUC=0.8910。</p>
                         </div>
 
                         <div class="card card-hover">
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
-                                <h3 class="card-title">[项目名称2 - 自学练手]</h3>
+                                <h3 class="card-title">基于决策树和随机森林算法的红酒质量分类分析</h3>
                                 <a href="#" class="link whitespace-nowrap">GitHub ↗</a>
                             </div>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tag tag-success">[技术栈1]</span>
-                                <span class="tag tag-success">[技术栈2]</span>
-                                <span class="tag tag-success">[技术栈3]</span>
+                                <span class="tag tag-success">数据挖掘</span>
+                                <span class="tag tag-success">随机森林</span>
+                                <span class="tag tag-success">Python</span>
                             </div>
-                            <p class="card-text">[项目简介：利用业余时间学习的实战项目，从中学到了什么，解决了什么问题]</p>
+                            <p class="card-text">基于UCI红酒质量数据集，使用决策树与随机森林算法完成红酒质量二分类任务，最终模型测试集准确率达91.7%，并分析出影响红酒质量的核心特征。</p>
                         </div>
 
                         <div class="card card-hover">
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
-                                <h3 class="card-title">[项目名称3 - 个人小工具]</h3>
+                                <h3 class="card-title">深度学习综合实验 - 手写数字识别与线性回归</h3>
                                 <a href="#" class="link whitespace-nowrap">GitHub ↗</a>
                             </div>
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tag tag-success">[技术栈1]</span>
-                                <span class="tag tag-success">[技术栈2]</span>
-                                <span class="tag tag-success">[技术栈3]</span>
+                                <span class="tag tag-success">深度学习</span>
+                                <span class="tag tag-success">TensorFlow</span>
+                                <span class="tag tag-success">Keras</span>
                             </div>
-                            <p class="card-text">[项目简介：解决日常生活中的某个小问题，提升了哪些能力，代码量大约多少行]</p>
+                            <p class="card-text">完成分类与回归双任务，基于MLP实现MNIST手写数字识别，双框架实现最高准确率97.98%，并完成L2正则化线性回归建模与可视化。</p>
+                        </div>
+
+                        <div class="card card-hover">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
+                                <h3 class="card-title">在线教育平台数据库设计</h3>
+                                <a href="#" class="link whitespace-nowrap">GitHub ↗</a>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag tag-success">MySQL</span>
+                                <span class="tag tag-success">数据库设计</span>
+                                <span class="tag tag-success">SQL</span>
+                            </div>
+                            <p class="card-text">基于MySQL 8.0设计并实现在线教育平台数据库，完成需求分析、E-R图设计、四表建模，实现DML增删改查、视图、事务、索引优化与权限安全控制。</p>
                         </div>
                     </div>
                 </div>
@@ -175,16 +177,16 @@
                             <div class="flex flex-wrap gap-2 mt-3">
                                 <span class="tag tag-primary">Python</span>
                                 <span class="tag tag-warning">C/C++</span>
-                                <span class="tag tag-success">[其他语言]</span>
+                                <span class="tag tag-success">SQL</span>
                             </div>
                         </div>
 
                         <div class="card">
                             <h3 class="card-subtitle">AI框架</h3>
                             <div class="flex flex-wrap gap-2 mt-3">
-                                <span class="tag tag-danger">PyTorch</span>
-                                <span class="tag tag-orange">TensorFlow</span>
-                                <span class="tag tag-purple">[其他框架]</span>
+                                <span class="tag tag-orange">TensorFlow / Keras</span>
+                                <span class="tag tag-danger">Scikit-learn</span>
+                                <span class="tag tag-purple">Pandas / NumPy</span>
                             </div>
                         </div>
 
@@ -193,7 +195,7 @@
                             <div class="flex flex-wrap gap-2 mt-3">
                                 <span class="tag tag-warning">HTML/CSS</span>
                                 <span class="tag tag-primary">JavaScript</span>
-                                <span class="tag tag-cyan">[其他前端技能]</span>
+                                <span class="tag tag-cyan">响应式布局</span>
                             </div>
                         </div>
 
@@ -201,9 +203,9 @@
                             <h3 class="card-subtitle">工具</h3>
                             <div class="flex flex-wrap gap-2 mt-3">
                                 <span class="tag tag-neutral">Git</span>
-                                <span class="tag tag-neutral">Linux</span>
-                                <span class="tag tag-neutral">Docker</span>
-                                <span class="tag tag-neutral">[其他工具]</span>
+                                <span class="tag tag-neutral">MySQL</span>
+                                <span class="tag tag-neutral">Matplotlib / Seaborn</span>
+                                <span class="tag tag-neutral">Jupyter Notebook</span>
                             </div>
                         </div>
                     </div>
@@ -218,15 +220,15 @@
                             <div class="space-y-4">
                                 <div class="contact-row">
                                     <span class="contact-label">邮箱</span>
-                                    <a href="mailto:[your.email@example.com]" class="link break-all">[your.email@example.com]</a>
+                                    <a href="mailto:1000553036@smail.shnu.edu.cn" class="link break-all">1000553036@smail.shnu.edu.cn</a>
                                 </div>
                                 <div class="contact-row">
                                     <span class="contact-label">GitHub</span>
-                                    <a href="https://github.com/[your-username]" target="_blank" class="link break-all">github.com/[your-username]</a>
+                                    <a href="https://github.com/Yue230141875" target="_blank" class="link break-all">github.com/Yue230141875</a>
                                 </div>
                                 <div class="contact-row">
                                     <span class="contact-label">微信</span>
-                                    <span class="text-slate-600">[微信号占位]</span>
+                                    <span class="text-slate-600">Riyyu9010yz5</span>
                                 </div>
                             </div>
                         </div>
