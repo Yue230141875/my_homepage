@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 min-h-screen font-sans">
+    <header class="mobile-header">
+        <button class="hamburger" id="hamburgerBtn" aria-label="菜单">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <h1 class="mobile-title">My Profile</h1>
+    </header>
+
+    <div class="flex min-h-screen">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">My Profile</h1>
+                <button class="sidebar-close" id="closeSidebar" aria-label="关闭菜单">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-btn active w-full text-left px-5 py-3.5 rounded-xl transition-all duration-300 ease-out" data-section="basic">
+                    基本信息
+                </button>
+                <button class="nav-btn w-full text-left px-5 py-3.5 rounded-xl transition-all duration-300 ease-out" data-section="about">
+                    关于我
+                </button>
+                <button class="nav-btn w-full text-left px-5 py-3.5 rounded-xl transition-all duration-300 ease-out" data-section="projects">
+                    项目经历
+                </button>
+                <button class="nav-btn w-full text-left px-5 py-3.5 rounded-xl transition-all duration-300 ease-out" data-section="skills">
+                    技能栈
+                </button>
+                <button class="nav-btn w-full text-left px-5 py-3.5 rounded-xl transition-all duration-300 ease-out" data-section="contact">
+                    联系方式
+                </button>
+            </nav>
+        </aside>
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <main class="main-content flex-1 ml-64 p-12">
+            <section id="basic" class="content-section active">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="section-title">基本信息</h2>
+                    <div class="card space-y-5">
+                        <div class="info-row">
+                            <span class="info-label">姓名</span>
+                            <span class="info-value">[Your Name]</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">学校</span>
+                            <span class="info-value">[你的学校名称]</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">专业</span>
+                            <span class="info-value">人工智能</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">身份</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-primary">大三学生</span>
+                                <span class="badge badge-secondary">[考研备考中/求职中]</span>
+                            </div>
+                        </div>
+                        <div class="info-row border-t border-slate-100 pt-5 mt-5">
+                            <span class="info-label">座右铭</span>
+                            <span class="info-value italic text-slate-500">"[你的座右铭]"</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="content-section">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="section-title">关于我</h2>
+                    <div class="space-y-5">
+                        <div class="card">
+                            <h3 class="card-subtitle">教育经历</h3>
+                            <p class="card-text">[入学年份] - 至今 | [学校名称] | 人工智能专业</p>
+                            <p class="card-hint mt-3">GPA：[你的GPA]/4.0 | 主修课程：机器学习、深度学习、计算机视觉、自然语言处理等</p>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-subtitle">学习方向</h3>
+                            <p class="card-text">[你的研究方向，例如：深度学习、计算机视觉、推荐系统等]</p>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-subtitle">求职/考研目标</h3>
+                            <p class="card-text">[你的目标：考研/校招/实习]</p>
+                            <p class="card-hint mt-2">[目标公司/院校方向]</p>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-subtitle">个人特点</h3>
+                            <ul class="card-list">
+                                <li>[特点1，例如：对AI技术有浓厚兴趣]</li>
+                                <li>[特点2，例如：善于独立思考和解决问题]</li>
+                                <li>[特点3]</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-subtitle">兴趣爱好</h3>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="tag tag-neutral">[兴趣1]</span>
+                                <span class="tag tag-neutral">[兴趣2]</span>
+                                <span class="tag tag-neutral">[兴趣3]</span>
+                                <span class="tag tag-neutral">[兴趣4]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="section-title">项目经历</h2>
+                    <div class="space-y-5">
+                        <div class="card card-hover">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
+                                <h3 class="card-title">[项目名称1 - 课程大作业]</h3>
+                                <a href="#" class="link whitespace-nowrap">GitHub ↗</a>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag tag-success">[技术栈1]</span>
+                                <span class="tag tag-success">[技术栈2]</span>
+                                <span class="tag tag-success">[技术栈3]</span>
+                            </div>
+                            <p class="card-text">[项目简介：这是某课程的期末大作业，实现了什么功能，用到了哪些技术，取得了什么效果]</p>
+                        </div>
+
+                        <div class="card card-hover">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
+                                <h3 class="card-title">[项目名称2 - 自学练手]</h3>
+                                <a href="#" class="link whitespace-nowrap">GitHub ↗</a>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag tag-success">[技术栈1]</span>
+                                <span class="tag tag-success">[技术栈2]</span>
+                                <span class="tag tag-success">[技术栈3]</span>
+                            </div>
+                            <p class="card-text">[项目简介：利用业余时间学习的实战项目，从中学到了什么，解决了什么问题]</p>
+                        </div>
+
+                        <div class="card card-hover">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
+                                <h3 class="card-title">[项目名称3 - 个人小工具]</h3>
+                                <a href="#" class="link whitespace-nowrap">GitHub ↗</a>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag tag-success">[技术栈1]</span>
+                                <span class="tag tag-success">[技术栈2]</span>
+                                <span class="tag tag-success">[技术栈3]</span>
+                            </div>
+                            <p class="card-text">[项目简介：解决日常生活中的某个小问题，提升了哪些能力，代码量大约多少行]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="content-section">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="section-title">技能栈</h2>
+                    <div class="space-y-5">
+                        <div class="card">
+                            <h3 class="card-subtitle">编程语言</h3>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="tag tag-primary">Python</span>
+                                <span class="tag tag-warning">C/C++</span>
+                                <span class="tag tag-success">[其他语言]</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-subtitle">AI框架</h3>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="tag tag-danger">PyTorch</span>
+                                <span class="tag tag-orange">TensorFlow</span>
+                                <span class="tag tag-purple">[其他框架]</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-subtitle">前端基础</h3>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="tag tag-warning">HTML/CSS</span>
+                                <span class="tag tag-primary">JavaScript</span>
+                                <span class="tag tag-cyan">[其他前端技能]</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-subtitle">工具</h3>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="tag tag-neutral">Git</span>
+                                <span class="tag tag-neutral">Linux</span>
+                                <span class="tag tag-neutral">Docker</span>
+                                <span class="tag tag-neutral">[其他工具]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="section-title">联系方式</h2>
+                    <div class="space-y-5">
+                        <div class="card">
+                            <div class="space-y-4">
+                                <div class="contact-row">
+                                    <span class="contact-label">邮箱</span>
+                                    <a href="mailto:[your.email@example.com]" class="link break-all">[your.email@example.com]</a>
+                                </div>
+                                <div class="contact-row">
+                                    <span class="contact-label">GitHub</span>
+                                    <a href="https://github.com/[your-username]" target="_blank" class="link break-all">github.com/[your-username]</a>
+                                </div>
+                                <div class="contact-row">
+                                    <span class="contact-label">微信</span>
+                                    <span class="text-slate-600">[微信号占位]</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-subtitle mb-4">给我留言</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="form-label">你的邮箱</label>
+                                    <input type="email" placeholder="[your.email@example.com]" class="form-input">
+                                </div>
+                                <div>
+                                    <label class="form-label">留言内容</label>
+                                    <textarea rows="4" placeholder="[请输入留言内容...]" class="form-input"></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary w-full sm:w-auto">
+                                    发送留言
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
